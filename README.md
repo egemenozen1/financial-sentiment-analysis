@@ -1,35 +1,15 @@
 # Financial Sentiment Analysis
 
 ## Project Overview
-This project aims to perform sentiment analysis on financial news articles and market reports using Natural Language Processing (NLP) techniques. By leveraging fine-tuned models from the Hugging Face Transformers library, we will create a customized solution tailored to the financial domain. The goal is to analyze the sentiment (positive, negative, or neutral) of financial texts to provide actionable insights for market trends and investor decision-making.
+This project focuses on performing sentiment analysis on financial news articles and market reports using advanced Natural Language Processing (NLP) techniques. By building and fine-tuning a custom model, we aim to classify financial texts as positive, negative, or neutral to provide actionable market insights.
 
 ## Objectives
-- Utilize the Financial PhraseBank dataset to perform sentiment analysis on financial texts.
-- Fine-tune and optimize the `DistilRoBERTa` model for accurate financial sentiment classification.
-- Deliver insights into market trends and financial narratives using sentiment analysis.
-- Develop a reusable and scalable solution for financial data sentiment analysis.
-
-## Dataset Overview
-The project utilizes the **Financial PhraseBank** dataset, which contains approximately 5,000 sentences from financial news and reports, each labeled as positive, negative, or neutral based on their impact on financial market perspectives. This dataset is well-regarded in financial sentiment analysis tasks and serves as a strong foundation for developing a robust model.
-
-## Data Preprocessing
-The data preprocessing steps include:
-- Text cleaning (e.g., removing special characters, lowercasing text).
-- Tokenization and input formatting for model compatibility.
-- Splitting the dataset into training, validation, and test sets for effective model evaluation.
-
-## Model Architecture
-This project leverages a fine-tuned version of the **DistilRoBERTa** model from the Hugging Face Transformers library. This lightweight model retains the robust performance of RoBERTa while providing faster inference times and lower computational costs. The model is trained on the Financial PhraseBank dataset to accurately classify financial text sentiments.
-
-## Evaluation Metrics
-Model performance is evaluated using the following metrics:
-- Accuracy
-- Precision
-- Recall
-- F1-Score
+- Analyze financial texts for sentiment classification.
+- Build and fine-tune a model to detect market sentiment with high accuracy.
+- Deliver meaningful insights to interpret market trends and investor behavior.
 
 ## Setup and Installation
-To get started with this project, follow the steps below:
+To start working on this project, follow the steps below:
 
 1. Clone this repository:
     ```bash
@@ -39,7 +19,7 @@ To get started with this project, follow the steps below:
     ```bash
     cd financial-sentiment-analysis
     ```
-3. Create and activate a virtual environment (optional but recommended):
+3. Create and activate a virtual environment:
     ```bash
     python -m venv env
     source env/bin/activate  # On Windows use `env\Scripts\activate`
@@ -49,13 +29,26 @@ To get started with this project, follow the steps below:
     pip install -r requirements.txt
     ```
 
-## Technologies Used
-- Python
-- Hugging Face Transformers
-- Pandas, NumPy
-- Matplotlib, Seaborn for data visualization
-- Scikit-learn (for data splitting and evaluation)
+## Data Preprocessing and Preparation
+The data is preprocessed to ensure it is clean and ready for model training:
+- Text cleaning and normalization steps are performed to remove noise.
+- Data is split into training, validation, and test sets to ensure robust model evaluation.
 
+## Model Architecture and Training
+The model is built using an advanced Transformer-based architecture, optimized and fine-tuned for financial sentiment classification tasks.
+
+## Evaluation Metrics
+Performance is measured using:
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+
+## Future Improvements
+- Additional data sources can be integrated to improve model generalizability.
+- Different model architectures and optimization techniques can be explored for higher accuracy.
+
+---
 ## Future Work & Improvements
 - Expand the dataset with additional financial texts to enhance model generalizability.
 - Experiment with different Transformer-based models for potential performance improvements.
