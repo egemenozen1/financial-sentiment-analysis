@@ -44,6 +44,12 @@ Performance is measured using:
 - Recall
 - F1-Score
 
+# Project Update
+
+This project has shown significant improvements in text classification accuracy. Recent iterations achieved an accuracy exceeding 70%, with particularly strong performance in predicting **neutral** class instances. However, there is still room for enhancement in **positive** and **negative** class predictions. Various balancing techniques, regularization methods, and architectural optimizations have been applied throughout the process. The model continues to evolve, aiming for even better performance.
+
+The current state of the project is promising, and further improvements will be explored in the future. Contributions and suggestions are always welcome.
+
 ## Future Improvements
 - Additional data sources can be integrated to improve model generalizability.
 - Different model architectures and optimization techniques can be explored for higher accuracy.
